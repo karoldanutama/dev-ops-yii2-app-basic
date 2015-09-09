@@ -33,7 +33,9 @@ install:
   - travis_retry composer global require "codeception/codeception=2.0.*" "codeception/specify=*" "codeception/verify=*"
 # setup application:
   - |
+    mysql -e 'create database devopstest;' -u root
     php init --env=Test --overwrite
+    php yii migrate --interactive=0
     cd tests
     codecept build
     cd ..
@@ -44,3 +46,4 @@ script:
     php -S localhost:8080 > /dev/null 2>&1 &
     cd ../tests
     codecept run
+
