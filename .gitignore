@@ -29,3 +29,4 @@ phpunit.phar
 /config/*-role.php
 /yii
 /tests/codeception/_support
+/mysql
