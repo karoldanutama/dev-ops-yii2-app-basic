@@ -26,6 +26,7 @@ phpunit.phar
 # local phpunit config
 /phpunit.xml
 /web/index.php
+/web/index-test.php
 /config/*-role.php
 /yii
 /tests/codeception/_support
