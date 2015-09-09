@@ -40,6 +40,19 @@ return [
             'config/web-role.php',
         ],
     ],
+    'Test' => [
+        'path' => 'test',
+        'setWritable' => [
+            'runtime',
+            'web/assets',
+        ],
+        'setExecutable' => [
+            'yii',
+        ],
+        'setCookieValidationKey' => [
+            'config/web-role.php',
+        ],
+    ],
     'Production' => [
         'path' => 'prod',
         'setWritable' => [
