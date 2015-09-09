@@ -1,19 +1,10 @@
 <?php
 $config = [
-    'id' => 'dev-role',
-    'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log'],
+    'id' => 'dev-web-role',
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => 'somerandomstring',
-        ],
-        'db' => [
-            'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=127.0.0.1;port=9306;dbname=roswelldbtest',
-            'username' => 'roswell',
-            'password' => 'roswellsecret',
-            'charset' => 'utf8',
+            'cookieValidationKey' => '',
         ],
     ],
 ];
