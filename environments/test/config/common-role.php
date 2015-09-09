@@ -12,9 +12,9 @@ $config = [
     'components' => [
     	'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=127.0.0.1;port=9306;dbname=devopstest',
-            'username' => 'devtest',
-            'password' => 'password',
+            'dsn' => 'mysql:host=127.0.0.1;port=3306;dbname=devopstest',
+            'username' => 'travis',
+            'password' => '',
             'charset' => 'utf8',
         ],
         'mailer' => [
