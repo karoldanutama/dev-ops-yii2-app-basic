@@ -46,4 +46,14 @@ script:
     php -S localhost:8080 > /dev/null 2>&1 &
     cd ../tests
     codecept run
+    cd ..
 
+deploy:
+  provider: heroku
+  api_key: "1e256782-e6ca-475f-9a17-9b7efc5943a1"
+  skip_cleanup: true
+  strategy: api
+  buildpack: https://github.com/ddollar/heroku-buildpack-multi
+  app: intense-forest-7815
+  on:
+    php: 5.5
